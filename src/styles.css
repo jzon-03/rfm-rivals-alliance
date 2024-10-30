@@ -21,3 +21,5 @@ body {
     --font-family: 'Roboto', sans-serif;
     --grunge-font: 'Courier New', monospace;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -5,17 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MembersComponent } from './members/members.component';
 import { provideHttpClient } from '@angular/common/http';
+import { GuideComponent } from './pages/guide/guide.component';
+import { AllianceMilestonesComponent } from './pages/alliance-milestones/alliance-milestones.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MembersComponent
+    MembersComponent,
+    GuideComponent,
+    AllianceMilestonesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [provideHttpClient()],
+  providers: [provideHttpClient(), provideAnimationsAsync()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
