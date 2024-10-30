@@ -8,17 +8,21 @@ import { provideHttpClient } from '@angular/common/http';
 import { GuideComponent } from './pages/guide/guide.component';
 import { AllianceMilestonesComponent } from './pages/alliance-milestones/alliance-milestones.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MaterialModule } from './material/material.module';
+import { GuideSeasonsComponent } from './pages/guide/guide-seasons/guide-seasons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MembersComponent,
     GuideComponent,
-    AllianceMilestonesComponent
+    AllianceMilestonesComponent,
+    GuideSeasonsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule
   ],
   providers: [provideHttpClient(), provideAnimationsAsync()],
   bootstrap: [AppComponent]
